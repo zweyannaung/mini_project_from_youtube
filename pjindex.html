@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Mine Project part 1</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='pjstyle.css' media='screen'>
+    <script src="https://kit.fontawesome.com/7deb04d01d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="HQ">
+        <div class="topHQ">
+            <div class="topMenu">
+                <div>
+                    <img src="./photoList/diamond.png" class="menuLogo"/>
+                </div>
+                <div class="barChangeOne">
+                    <a href="#">Home</a>
+                    <a href="#">Service</a>
+                    <a href="#">Products</a>
+                    <a href="#">Contacts</a>
+                </div>
+                <div class="signGroup"><i class="fa-solid fa-user uSER"></i><a href="#" class="signUp">sign up</a></div>
+                <div class="iconBar" onclick="clickToFloat()"><i class="fa-solid fa-bars"></i></div>
+                
+                <!--Buikd Nav Bar-->
+                
+                <div class="main">
+                    <div class="backToNav" onclick="clickToFloat()"><i class="fa-solid fa-angles-right"></i></div>
+                    <div>
+                        <a href="#"><i class="fa-solid fa-user logoLink"></i><span class="tess">My Profile</span></a>
+                        <a href="#"><i class="fa-solid fa-house logoLink"></i><span class="tess">Home</span></a>
+                        <a href="#"><i class="fa-solid fa-bell-concierge logoLink"></i><span class="tess">Service</span></a>
+                        <a href="#"><i class="fa-brands fa-product-hunt logoLink"></i><span class="tess">Product</span></a>
+                        <a href="#"><i class="fa-sharp fa-solid fa-address-book logoLink"></i><span class="tess">Contacts</span></a>
+                    </div>
+                    <div class="log">
+                        <a href="#"><i class="fa-solid fa-right-from-bracket logoLink"></i><span class="tess">LogOut</span></a>
+                    </div>
+                </div> 
+            
+            </div>
+        </div>
+        <div class="middleHQ">
+            <div class="middleHR">
+                <div class="leftSide">
+                    <div class="leftLdr">
+                        <h1>Our besic thesis for bitcoin is that it is better than gold.</h1>
+                        <span class="spanText">Contrary to popular belief,Lorem lpsum is not simply random text.It has roots in a piece of classical Lotin litrotrur from 45 BC,making it over 2000 years old.</span>
+                        <div class="playGroup">
+                            <div class="playBtm"><i class="fa-regular fa-circle-play"></i></div>
+                            <small><b>LEARN MORE</b></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="rightSide">
+                    <div><img src="./photoList/wepik-photo-mode-2022810-203141.png" class="rightImage"/></div>
+                </div>
+            </div>
+        </div>
+        <div class="footerHQ">
+            <ul class="bottomLogo">
+                <li><i class="fa-solid fa-share-nodes"></i><p>Share</p></li>
+                <li><i class="fa-solid fa-rectangle-ad"></i><p>Recent</p></li>
+                <li><i class="fa-solid fa-gear"></i><p>Setting</p></li>
+                <li><i class="fa-solid fa-wallet"></i><p>Wallet</p></li>
+            </ul>
+        </div>
+        <div class="socialList">
+            <ul><a href="#"><i class="fa-brands fa-facebook-f"></i></a></ul>
+            <ul><a href="#"><i class="fa-brands fa-twitter"></i></a></ul>
+            <ul><a href="#"><i class="fa-brands fa-instagram"></i></a></ul>
+            <ul><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></ul>
+        </div>
+    </div>
+    <script>
+        function clickToFloat(){
+            document.querySelector(".main").classList.toggle("activeNav");
+        }
+     </script>
+</body>
+</html>

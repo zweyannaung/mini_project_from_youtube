@@ -1,0 +1,367 @@
+ html,body{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Roboto', sans-serif;
+ }
+
+ .HQ{
+    background-color: #686C7F;
+    position: relative;
+    overflow: hidden;
+
+ }
+
+.topHQ{
+    max-width: 1400px;
+    margin:0 auto;
+}
+
+ .topMenu{
+    width: 720px;
+    display:flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color:#b2b1b1;
+    margin-left: 20px;
+ }
+
+ .topMenu  a{
+    text-decoration: none;
+    color:#b2b1b1 ;
+    margin: 0 30px;
+ }
+
+.menuLogo{
+    width: 35px;
+    margin-left: 20px;
+}
+.uSER{
+    right: 120px;
+    top: 27px;
+    position: absolute;
+    font-size: 25px;
+    padding:8px 8px;
+    border: 1px solid #b2b1b1;
+    border-radius: 50%;
+    text-align: center;
+    background-origin: border-box;
+    margin-right: 25px;
+    color: white;
+}
+.signUp{
+    right: 10px;
+    top: 27px;
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    padding: 5px 8px;
+    border: 1px solid #b2b1b1;
+    border-radius: 15px;
+    background-origin: border-box;
+}
+.iconBar{
+    display: none;
+}
+ /** NAV BAR **/
+ .main{
+    position: fixed;
+    top:5px;
+    right: -310px;
+    width: 300px;
+    height: 700px;
+    background-color: #009879 ;
+    border: 2px solid #008c71;
+    box-shadow: 0px 0px 10px 8px rgba(0,0,0,0.25);
+    transition: right 0.45s ease-in-out, opacity 0.45s ease-in-out;
+    overflow: hidden;
+    z-index: 5;
+}
+.activeNav{
+  right: 5px;
+}
+
+.fa-angles-right{
+    border: none;
+    font-size: 30px;
+    padding: 10px 6px 10px 20px;
+    cursor: pointer;
+    color: whitesmoke;
+}
+  
+.main a{
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin-left: 0px;
+    width: 100%;
+    background-color: #008c71;
+    padding: 20px;
+    border-bottom:2px solid #009879;
+    font-weight: bold;
+}
+ .logoLink{
+  border: 2px solid whitesmoke;
+  border-radius: 50%;
+  padding: 6px;
+  color: whitesmoke;
+  font-size: 20px;
+
+}
+.tess{
+    padding: 12px;
+    font-size: 20px;
+    color: whitesmoke;
+}
+.log{
+    margin-top: 120px;
+}
+.main a:active{
+    background: #007d65;
+}
+
+/** Middle Part**/
+.middleHQ{
+    max-width: 1400px;
+    margin:0 auto;
+}
+.middleHR{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ .rightSide{
+    display: inline-block;
+    width:50%;
+}
+.leftSide{
+    display: inline-block;
+    width: 50%;
+    height: 690px;
+}
+.leftLdr{
+    max-width: 530px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+h1{
+    color: whitesmoke;
+    letter-spacing: 2px;
+}
+.spanText{
+    display: block;
+    margin: 30px 0;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color:#b2b1b1 ;
+    
+}
+
+.playGroup{
+    display: flex;
+    opacity: 50%;
+    margin-top: 60px;
+    cursor: pointer;
+}
+.playBtm{
+    font-size: 60px;
+    opacity: 80%;
+}
+
+small{
+    margin: auto 30px;
+    letter-spacing: 3px;
+}   
+h1,.spanText,.playGroup{
+    margin-left: 50px;
+}
+
+.rightImage{
+    width: 100%;
+    display: inline-block;
+    margin-top: -50px;
+}
+
+.footerHQ{
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    background-color: grey;
+    border-top-right-radius: 110px;
+}
+.footerHQ ul li{
+    margin: 0 40px;
+    cursor: pointer;
+}
+.bottomLogo{
+    display: flex;
+    list-style: none;
+    font-size: 25px;
+    margin: 30px;
+}
+p{
+    font-size: 12px;
+    font-weight: bold;
+    
+}
+.socialList{
+    right: 50px;
+    bottom: 60px;
+    position: absolute;
+}
+.socialList ul{
+   margin-top: 30px;
+    text-align: center;
+}
+.socialList ul a{
+    border: 1px solid white;
+    border-radius: 100%;
+    padding: 5px;
+    display: block;
+    color: white;
+}
+
+@media(max-width:1024px){
+    .topHQ,.middleHQ{
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .uSER,.signUp{
+        font-size: 18px;
+        top: 34px;
+    }
+    .uSER{
+        right: 95px;
+    }
+    .rightSide{
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        margin-bottom: 150px;
+    }
+    .rightImage{
+        width: 100%;
+        text-align: center;
+    }
+    .leftSide{
+        width: 100%;
+        height: 400px;
+        text-align: center;
+    }
+    .playGroup{
+        margin-left: 150px;
+    }
+    .barChangeOne{
+        margin-left: -20px;
+    }
+}
+@media(max-width:767px){
+    .topHQ,.middleHQ{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .topMenu{
+        width: 100%;
+        margin-left: 0;
+    }
+    .menuLogo{
+        margin-left: 28px;
+    }
+    .iconBar{
+        display: inline-block;
+        font-size: 35px;
+        margin-right: 18px;
+    }
+    .barChangeOne{
+        display: none;
+    }
+    .signGroup{
+        display: none;
+    }
+    .rightSide{
+        height: 500px;
+    }
+}
+@media(max-width:680px){
+    .socialList{
+        right: 30px;
+        bottom: 130px;
+        position: absolute;
+    }
+}
+@media(max-width:510px){
+    .leftLdr{
+        width: 100%;
+    }
+    h1,.spanText{
+        margin-left: 15px;
+        margin-right: 10px;
+        letter-spacing: 1px;
+    }
+    .rightSide{
+        height: 430px;
+    }
+    .footerHQ{
+        border-radius: 0;
+    }
+    .bottomLogo{
+        margin-left: -18px;
+    }
+}
+@media(max-width:415px){
+    .topHQ,.topMenu{
+        width: 100%;
+    }
+    .menuLogo{
+        margin-left: 50px;
+    }
+    .iconBar{
+        margin-right: 18px;
+    }
+    .leftSide{
+        height: 450px;
+    }
+    .leftLdr{
+        width: 100%;
+    }
+    .spanText{
+        text-align: center;
+        margin:0 15px;
+        letter-spacing: 2px;
+    }
+    .rightSide{
+        height: 350px;
+    }
+    .socialList{
+        right: 15px;
+        bottom: 150px;
+        position: absolute;
+    }
+    .footerHQ ul li{
+        margin: 0 30px;
+    }
+    .bottomLogo{
+        font-size: 20px;
+        margin: 25px;
+        margin-left: -35px;
+    }
+    .playGroup{
+        margin-left: 100px;
+    }
+}
+@media(max-width:362px){
+    .topHQ,.topMenu{
+        width: 100%;
+    }
+    .menuLogo{
+        margin-left: 30px;
+    }
+    .iconBar{
+        margin-right: 18px;
+    }
+    .bottomLogo{
+        margin-left: -48px;
+    }
+}
